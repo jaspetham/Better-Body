@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Better Body</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.14.0-web/css/all.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+ <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header>
+      <div class="hotline d-flex justify-content-end">
+        <a href="#"><i class="fas fa-phone-alt"></i> (844) 707-7730</a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/bbc logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>		
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">claim points</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <button role="button" class="btn btn-custom btn-iconed">
+                    <i class="fa fa-heart"></i> <span class="spn">buy now</span>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+    <!-- hero banner start -->
+    <section class="heroBanner" id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+              <div class="banner-content text-center">
+                  <h1>introducing radiancy</h1>
+                  <p>a unique blend of probiotics, marine collagen & cherry blossom extract that ease menopausal skin symptoms like acne, wrinkles, sagging and dark spots</p>
+                  <a href="#">
+                    <button role="button" class="btn btn-check btn-iconed">
+                      <i class="fa fa-heart"></i> <span class="spn"> try radiancy</span>
+                    </button>
+                  </a>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+    <!-- hero banner end -->
+    <!-- about start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-4">
+            <div class="about-img">
+                <img src="./assets/radiancy heroshot_1.2.jpg" class="img-fluid" alt="image1">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 my-auto">
+            <div class="about-content">
+              <h6>About the product</h6>
+              <h2 class="about-title">Triple Action, Skin Protection.</h2>
+              <p>Meet Radiancy - A marine collagen & probiotic supplement that ladies who want smooth & supple skin love to add to their daily routine when they need the extra support to feel lovely again. With Cherry Blossom Extract for added smoothening effect, anyone can look and feel their best.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <script> 
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+          $(".navbar").addClass("offsetTop");
+        } else {
+          $(".navbar").removeClass("offsetTop");
+        }
+      }); 
+    </script>
+ </body>
+</html>
