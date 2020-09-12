@@ -1,5 +1,7 @@
 :root{
     --primary-color:#8A0534;
     --secondary-color:#FFF0F2;
+    --background-color:#ffd5d3;
     --primary-font:'Poppins', sans-serif;
+    --title-font:'IBM Plex Sans', sans-serif;
 }
