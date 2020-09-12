@@ -20,7 +20,9 @@ p{
     text-align: justify;
     font-size:17px;
 }
-
+.row-one{
+    margin-bottom:55px;
+}
 /* navbar start */
 .hotline{
     background-color:#ebebeb;
@@ -289,10 +291,6 @@ p{
     background-color: var(--background-color);
 }
 
-.why .row-one{
-    margin-bottom:55px;
-}
-
 .why .info h3{
     font-size:22px;
     line-height: 35px;
@@ -322,6 +320,40 @@ p{
     height:600px;
 }
 /* why end */
+/* review start */
+.review{
+    padding:95px 0 100px;
+}
+
+.review-box{
+    background-color:grey;
+}
+
+.review-box h3{
+    padding:180px 30px;
+    color:var(--primary-color);
+    text-transform: uppercase;
+}
+
+.review .wrinkle-content h3{
+    max-width:650px;
+    margin:0 auto;
+}
+
+.review .woman-content img{
+    box-shadow: 10px 10px 5px grey;
+}
+.review .woman-content h4{
+    margin-top:20px;
+    margin-bottom:0;
+    font-weight: 600;
+    text-transform:capitalize ;
+}
+
+.review .woman-content small{
+    font-size:15px;
+}
+/* review end */
 /* only on desktop view start */
 @media(min-width:1040px){
     .box:hover {
@@ -404,7 +436,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     p{
         font-size:16px;
     }
-
+    .row-one{
+        margin-bottom:20px;
+    }
     /* navbar mobile start */
     .hotline{
         display: none!important;
@@ -509,10 +543,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
         padding:50px 0px;
     }
 
-    .why .row-one{
-        margin-bottom:20px;
-    }
-
     .why .info h3{
         font-size:18px;
         text-transform: capitalize;
@@ -532,5 +562,26 @@ and (-webkit-min-device-pixel-ratio: 2) {
         font-weight:800
     }
     /* why mobile end */
+    /* review mobile review start */
+    .review{
+        padding:50px 0;
+    }
+    .review-box h3{
+        padding:80px 15px;
+        font-size:18px;
+    }
+
+    .review h3{
+        font-size:18px;
+        font-weight: 600;
+    }
+
+    .woman-content{
+        padding-bottom:15px;
+    }
+    .woman-content h4{
+        font-size:16px;
+    }
+    /* review mobile review end */
 }
 /* mobile end */
