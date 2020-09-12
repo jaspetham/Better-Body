@@ -23,6 +23,16 @@ p{
 .row-one{
     margin-bottom:55px;
 }
+.btn-custom{
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    font-weight:600;
+    color:white;
+}
+
+.btn:hover{
+    color:white;
+}
 /* navbar start */
 .hotline{
     background-color:#ebebeb;
@@ -123,15 +133,8 @@ nav .nav-item:last-child .nav-link{
     top:5px;
 }
 nav .nav-item:last-child .nav-link .btn{
-    color:white;
     text-transform: uppercase;
     margin-right:0;
-}
-
-.btn-custom{
-    background-color: var(--primary-color);
-    border-radius: 25px;
-    font-weight:600;
 }
 /* navbar end */
 
@@ -319,6 +322,16 @@ p{
     background-color:white;
     height:600px;
 }
+
+.why .btn-custom{
+    padding:20px 30px;
+    min-width:200px;
+    font-size:25px;
+}
+
+.why .btn-custom:hover{
+    color:white;
+}
 /* why end */
 /* review start */
 .review{
@@ -353,7 +366,175 @@ p{
 .review .woman-content small{
     font-size:15px;
 }
+
+.review .btn{
+    padding:15px 20px;
+    min-width:200px;
+    font-size:25px;
+}
+
+.review .compare-content p{
+    margin-bottom:10px;
+}
+.review .btn:hover{
+    color:white;
+}
 /* review end */
+
+/* girl banner start */
+.girl-banner{
+    background-color: #e9edf0;
+    position: relative;
+}
+
+.want-banner h3{
+    text-align: center;
+    font-weight: 600;
+}
+.girl-banner .girl-want:before{
+    content: "";
+    background-image: url(../assets/girl-want.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: -100px;
+    height:100%;
+    width: 965px;
+    bottom:0;
+    top:0;
+    margin:auto;
+}
+
+.girl-banner ul{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.girl-banner ul li{
+    font-size: 20px;
+    font-family: var(--primary-font);
+    margin-bottom:20px;
+    font-weight: 600;
+}
+
+.girl-banner ul li:before{
+    content: "";
+    background-image:url("../assets/tick.png") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left:-30px;
+    height:36px;
+    width:36px;
+}
+
+.free-shipping{
+    background-color: var(--primary-color);
+}
+
+.free-shipping #rocket{
+    color: white;
+}
+
+.free-shipping p{
+    font-size:40px;
+    text-align: center;
+    color:white;
+    padding:10px 0;
+}
+/* girl-banner end */
+/* buy start */
+.buy .buy-content h2{
+    text-transform: capitalize;
+    margin-bottom:25px;
+}
+
+.buy .buy-content p{
+    max-width:850px;
+    margin:0 auto;
+}
+.buy .box{
+    background:white;
+    border-radius: 25px;
+    height:100%;
+}
+.buy .box-title{
+    background-color:var(--background-color);
+    padding:20px;
+    border-radius: 25px 25px 0 0;
+}
+.buy .box-title h4{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.buy .box-title span{
+    font-size:16px;
+    color:grey;
+    opacity: .8;
+}
+
+.buy .inner-box img{
+    margin:20px 0;
+}
+
+.buy .inner-box h4{
+    color:grey;
+    font-size: 20px;
+}
+
+.buy .inner-box .saving{
+    font-weight: 600;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.buy .inner-box .price .currency{
+    font-size:40px;
+}
+.buy .inner-box .price{
+    display:block;
+    font-size:70px;
+}
+
+.buy .inner-box .bottle{
+    font-size:20px;
+    font-weight: 800;
+}
+
+.buy .inner-box .per-bottle{
+    display:block;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.buy .inner-box .refund{
+    padding-top:5px;
+    text-align: center;
+    font-size: 15px;
+    padding:10px 0 15px;
+}
+
+.buy .inner-box .shipping-detail i{
+    font-size:50px;
+    color:var(--primary-color);
+    position: absolute;
+    left:50px;
+}
+
+.buy .inner-box .shipping-detail span{
+    display:block;
+    text-align: left;
+    padding-left:60px;
+    color:black;
+    font-weight: 700;
+}
+.buy .inner-box .btn{
+    text-transform: uppercase;
+}
+.buy .inner-box .purchase{
+    padding-top:30px;
+}
+/* buy end */
 /* only on desktop view start */
 @media(min-width:1040px){
     .box:hover {
@@ -387,6 +568,11 @@ p{
         color:#242424;
         margin-bottom: 23px;
         text-transform: capitalize;  
+    }
+
+    .progress{
+        position: relative;
+        left:200px;
     }
 }
 /* only on desktop view end */
@@ -423,6 +609,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     .best .box{
         height:650px;
+    }
+
+    .progress{
+        position: relative;
+        left:150px;
     }
 }
 
@@ -583,5 +774,53 @@ and (-webkit-min-device-pixel-ratio: 2) {
         font-size:16px;
     }
     /* review mobile review end */
+    /* girl banner mobile start */
+    .want-banner h3{
+        font-size:18px;
+        padding:0 30px;
+    }
+
+    .girl-banner ul{
+        padding:20px 0px;
+        padding-left:50px;
+        margin:0;
+    }
+    .girl-banner ul li:before{
+        left:20px;
+        height:20px;
+        width:20px;
+    }
+    .girl-banner ul li{
+        font-size:16px;
+    }
+
+    .free-shipping p{
+        font-size:16px;
+    }
+    /* girl banner mobile end */
+    /* buy mobile start */
+    .progress img{
+        width:105%;
+        height:100px;
+    }
+
+    .buy .buy-content h2{
+        font-size:20px;
+        margin-bottom:10px;
+        font-weight: 600;
+    }
+
+    .buy .buy-content h1{
+        font-size:20px;
+    }
+
+    .buy .product{
+        padding:0 20px;
+    }
+    .buy .product .col-md-6{
+        margin-bottom:30px;
+    }
+
+    /* buy mobile end */
 }
 /* mobile end */
