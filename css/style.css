@@ -774,6 +774,9 @@ footer .office h6 {
 /* only on desktop view end */
 /* ipad view */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav-link {
+    width: 100%;
+  }
   .nav-link .btn-custom {
     min-width: 125px;
   }
@@ -795,6 +798,9 @@ footer .office h6 {
 
 /* ipad pro view */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav-link {
+    width: 100%;
+  }
   .nav-link .btn-custom {
     min-width: 125px;
   }
@@ -952,6 +958,10 @@ footer .office h6 {
     font-size: 18px;
     line-height: 25px;
     font-weight: 800;
+  }
+
+  .why #natural-way {
+    padding: 0px 20px;
   }
   /* why mobile end */
   /* review mobile review start */
