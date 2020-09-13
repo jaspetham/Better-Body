@@ -1,5 +1,6 @@
 # What i use?
-I have made the website with Bootstrap 4 Framework, Little bit of Jquery and some Font awesome icon
+
+I have made the website with Bootstrap 4 Framework, Little bit of Jquery and some Font awesome icon.
 
 ## Suggest Improvement
 
@@ -10,4 +11,5 @@ I have made the website with Bootstrap 4 Framework, Little bit of Jquery and som
 5. Improve Footer - The footer of the old website is too long and not symmetrical so i improve the footer with grid system
 
 ## Implement Suggestion
+
 I have implement all of the suggestion.
