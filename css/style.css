@@ -122,19 +122,49 @@ nav img {
   width: auto;
 }
 
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: red;
+.navbar-nav > li {
+  float: left;
+  position: relative;
 }
-.navbar-light .navbar-nav .nav-link {
-  color: rgb(0, 0, 0);
+.navbar-nav .active:after,
+.navbar-nav li :hover:after {
+  position: absolute;
+  content: "";
+  height: 0.1em;
+  top: 100%;
+  z-index: -1;
+  left: 15px;
+  right: 15px;
+  transform: scaleX(1);
+  transition: all ease-in-out 0.3s;
 }
 
-nav .nav-item .nav-link {
-  text-transform: capitalize;
+#buy-btn a.active::after {
+  background: none;
+  transition: none;
+}
+
+.navbar-nav .nav-link {
+  color: black !important;
+}
+
+.navbar-nav a::after {
+  position: absolute;
+  content: "";
+  height: 0.1em;
+  top: 100%;
+  background: var(--primary-color);
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.navbar ul li a {
   position: relative;
+  display: flex;
+  text-decoration: none;
+  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-transform: capitalize;
   top: 10px;
   font-size: 20px;
   color: black;
@@ -142,7 +172,6 @@ nav .nav-item .nav-link {
   margin-right: 20px;
   font-family: var(--primary-font);
 }
-
 nav .nav-item:last-child .nav-link {
   top: 5px;
 }
