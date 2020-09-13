@@ -807,6 +807,9 @@ footer .office h6 {
   .nav-link {
     width: 100%;
   }
+  .navbar .nav-link:hover {
+    color: var(--primary-color) !important;
+  }
   .nav-link .btn-custom {
     min-width: 125px;
   }
@@ -830,6 +833,9 @@ footer .office h6 {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   .nav-link {
     width: 100%;
+  }
+  .navbar .nav-link:hover {
+    color: var(--primary-color) !important;
   }
   .nav-link .btn-custom {
     min-width: 125px;
